@@ -27,7 +27,7 @@ Level_X/
     	└── exercise.c      # My solution
 ```
 
-## 📊 Progress — 56 / 56 ✅
+## 📊 Progress — 57 / 57 ✅
 
 | Level 1 🎫            | Level 2 🎫           | Level 3 🎫            | Level 4 🎫            |
 |----------------------|----------------------|----------------------|----------------------|
@@ -39,20 +39,20 @@ Level_X/
 | ✅ ft_swap           | ✅ ft_strcspn        | ✅ ft_range          | ✅ ft_split          |
 | ✅ repeat_alpha      | ✅ ft_strdup         | ✅ ft_rrange         | ✅ rev_wstr          |
 | ✅ rev_print         | ✅ ft_strpbrk        | ✅ hidenp            | ✅ rostring          |
-| ✅ rot_13            | ✅ ft_strrev         | ✅ lcm               | ✅ sort_int_tab      |
-| ✅ rotone            | ✅ ft_strspn         | ✅ paramsum          | ✅ sort_list         |
-| ✅ search_and_replace| ✅ is_power_of_2     | ✅ pgcd              |                      |
-| ✅ ulstr             | ✅ inter             | ✅ pgcd              |                      |
-|                      | ✅ last_word         | ✅ print_hex         |                      |
-|                      | ✅ max               | ✅ rstr_capitalizer  |                      |
-|                      | ✅ print_bits        | ✅ str_capitalizer   |                      |
-|                      | ✅ reverse_bits      | ✅ tab_mult          |                      |
+| ✅ rot_13            | ✅ ft_strrev         | ✅ paramsum          | ✅ sort_int_tab      |
+| ✅ rotone            | ✅ ft_strspn         | ✅ pgcd              | ✅ sort_list         |
+| ✅ search_and_replace| ✅ is_power_of_2     | ✅ ppcm              |                      |
+| ✅ ulstr             | ✅ inter             | ✅ print_hex         |                      |
+|                      | ✅ last_word         | ✅ rstr_capitalizer  |                      |
+|                      | ✅ max               | ✅ str_capitalizer   |                      |
+|                      | ✅ print_bits        | ✅ tab_mult          |                      |
+|                      | ✅ reverse_bits      |                      |                      |
 |                      | ✅ snake_to_camel    |                      |                      |
 |                      | ✅ swap_bits         |                      |                      |
 |                      | ✅ union             |                      |                      |
 |                      | ✅ wdmatch           |                      |                      |
 
-**🎯 Total pool: 57 functions / programs** — 12 (L1) · 19 (L2) · 15 (L3) · 10 (L4)
+**🎯 Total pool: 57 functions / programs** — 12 (L1) · 20 (L2) · 15 (L3) · 10 (L4)
 
 ## 🚀 How to use it
 
