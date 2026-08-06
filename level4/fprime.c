@@ -5,22 +5,23 @@ void	fprime(int nbr)
 {
 	int	div;
 
-	div = 1;
+	div = 2;
 	if (nbr < 0)
 		return ;
 	if (nbr == 1)
 		printf("1");
-	while (nbr > div++)
+	while (div <= nbr)
 	{
-		if (nbr % div == 0)
-		{
-			printf("%d", div);
-			if (nbr == div)
-				break ;
-			printf("*");
-			nbr /= div;
-			div = 1;
-		}
+    	if (nbr % div == 0)
+    	{
+        	printf("%d", div);
+        	nbr /= div;
+
+        	if (nbr != 1)
+            	printf("*");
+    	}
+    	else
+        	div++;
 	}
 }
 
