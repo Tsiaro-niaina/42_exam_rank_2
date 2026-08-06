@@ -9,10 +9,10 @@ void	inter(char *s1, char *s2)
 		int j = 0;
 		while (s2[j])
 		{
-			if (s1[1] == s2[j] && seen[(int)s1[i]] == 0)
+			if (s1[1] == s2[j] && seen[(unsigned int)s1[i]] == 0)
 			{
 				write (1, &s1[i], 1);
-				seen[(int)s1[i]] = 1;
+				seen[(unsigned int)s1[i]] = 1;
 			}
 			j++;
 		}

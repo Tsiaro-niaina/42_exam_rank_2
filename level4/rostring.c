@@ -1,6 +1,6 @@
 #include <unistd.h>
 
-int print_words(char *s, int start)
+int print_rest_of_words(char *s, int start)
 {
 	int i = start;
 	int first = 1;
@@ -21,7 +21,7 @@ int print_words(char *s, int start)
 	return (!first);
 }
 
-void write_word(char *s, int start, int end)
+void write_first_word(char *s, int start, int end)
 {
 	while (start < end)
 		write(1, &s[start++], 1);
@@ -30,19 +30,19 @@ void write_word(char *s, int start, int end)
 int main(int argc, char **argv)
 {
 	int i;
-	int w1s;
+	int first_word_start;
 
 	if (argc >= 2)
 	{
 		i = 0;
 		while (argv[1][i] == ' ' || argv[1][i] == '\t')
 			i++;
-		w1s = i;
+		first_word_start = i;
 		while (argv[1][i] && argv[1][i] != ' ' && argv[1][i] != '\t')
 			i++;
-		if (print_words(argv[1], i))
+		if (print_rest_of_words(argv[1], i))
 			write(1, " ", 1);
-		write_word(argv[1], w1s, i);
+		write_first_word(argv[1], first_word_start, i);
 	}
 	write(1, "\n", 1);
 	return (0);

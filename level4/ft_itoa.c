@@ -22,9 +22,9 @@ char	*ft_itoa(int nbr)
 	int		neg;
 	char	*result;
 
-	n = nbr;
+	n = (long)nbr;
 	len = len_int(n);
-	result = malloc((len + 1) * sizeof(char));
+	result = malloc(sizeof(char) * (len + 1));
 	if (result == NULL)
 		return (NULL);
 	result[len] = '\0';

@@ -10,7 +10,7 @@ int     *ft_rrange(int start, int end)
 		len = end - start + 1;
 	int *tab = malloc (sizeof (int) * len);
 	if (!tab)
-		return(0);
+		return (0);
 	while (i < len)
 	{
 		if (end >= start)

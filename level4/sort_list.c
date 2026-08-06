@@ -11,9 +11,9 @@ typedef struct s_list
 
 t_list	*sort_list(t_list *lst, int (*cmp)(int, int))
 {
-	t_list *node;
-	int tmp;
-	int swapped;
+	t_list	*node;
+	int 	tmp;
+	int		swapped;
 
 	swapped = 1;
 	while (swapped)
