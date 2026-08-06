@@ -7,12 +7,12 @@ unsigned char	swap_bits(unsigned char octet)
 
 // int	main(void)
 // {
-// 	unsigned char	resultado;
+// 	unsigned char	result;
 // 	unsigned char	octet;
 
-// 	octet = 0x53;
-// 	resultado = swap_bits(octet);
+// 	octet = 0x52;
+// 	result = swap_bits(octet);
 // 	printf("Octet original: 0x%X\n", octet);
-// 	printf("Octet apres swap: 0x%X\n", resultado);
+// 	printf("Octet apres swap: 0x%X\n", result);
 // 	return (0);
 // }
