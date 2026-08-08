@@ -1,4 +1,4 @@
-char	ft_strrev(char *s)
+char	*ft_strrev(char *s)
 {
 	char temp;
 	int	i = 0;
@@ -16,3 +16,12 @@ char	ft_strrev(char *s)
 	}
 	return (s);
 }
+
+// #include <stdio.h>
+
+// int	main(int argc, char **argv)
+// {
+// 	if (argc == 2)
+// 		printf("%s\n", ft_strrev(argv[1]));
+// 	return (0);
+// }

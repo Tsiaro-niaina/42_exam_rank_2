@@ -2,8 +2,8 @@
 
 void	snake_to_camel(char *s)
 {
-	int	i = 0;
-	char c;
+	int		i = 0;
+	char	c;
 	while (s[i])
 	{
 		if (s[i] == '_' && s[i + 1] != '\0')

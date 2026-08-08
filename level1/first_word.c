@@ -3,7 +3,7 @@
 void	first_word(char *s)
 {
 	int i = 0;
-	while ((s[i] == ' ' )|| (s[i] >= 9 && s[i] <= 13))
+	while ((s[i] == ' ' ) || (s[i] >= 9 && s[i] <= 13))
 		i++;
 	while (s[i] && s[i] != ' ' && s[i] != '\t')
 	{
