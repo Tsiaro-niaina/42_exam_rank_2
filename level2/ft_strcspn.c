@@ -16,3 +16,14 @@ size_t	ft_strcspn(const char *s, const char *reject)
 	}
 	return (i);
 }
+
+
+// #include <stdio.h>
+// int main(void)
+// {
+// 	const char *s = "Hello, World!";
+// 	const char *reject = "aeiou";
+// 	size_t result = ft_strcspn(s, reject);
+// 	printf("The length of the initial segment of '%s' not containing any characters from '%s' is: %zu\n", s, reject, result);
+// 	return (0);
+// }

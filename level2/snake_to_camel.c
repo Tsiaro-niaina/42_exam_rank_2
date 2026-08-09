@@ -19,3 +19,18 @@ void	snake_to_camel(char *s)
 		}
 	}
 }
+
+// int main(int argc, char **argv)
+// {
+// 	int i = 1;
+
+// 	while (i < argc)
+// 	{
+// 		snake_to_camel(argv[i]);
+// 		write(1, "\n", 1);
+// 		i++;
+// 	}
+// 	if (argc == 1)
+// 		write(1, "\n", 1);
+// 	return (0);
+// }

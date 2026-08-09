@@ -19,3 +19,13 @@ int	ft_atoi(char *s)
 	}
 	return (res * sign);
 }
+
+
+// #include <stdio.h>
+// int main(void)
+// {
+// 	char *str = "   -12345";
+// 	int result = ft_atoi(str);
+// 	printf("The integer value of '%s' is: %d\n", str, result);
+// 	return (0);
+// }

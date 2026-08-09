@@ -22,3 +22,21 @@ char	*ft_strdup(char *src)
 	dup[i] = '\0';
 	return (dup);
 }
+
+// #include <stdio.h>
+// int main(void)
+// {
+// 	char *src = "Hello, World!";
+// 	char *dup = ft_strdup(src);
+// 	if (dup)
+// 	{
+// 		printf("Original: %s\n", src);
+// 		printf("Duplicate: %s\n", dup);
+// 		free(dup);
+// 	}
+// 	else
+// 	{
+// 		printf("Memory allocation failed.\n");
+// 	}
+// 	return (0);
+// }

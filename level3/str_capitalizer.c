@@ -2,24 +2,19 @@
 
 void capitalize(char *str)
 {
-	int i;
-	char c;
-	int start;
-
-	i = 0;
-	start = 1;
+	int i = 0;
+	int start = 1;
 	while (str[i])
 	{
-		c = str[i];
-		if (start && c >= 'a' && c <= 'z')
-			c = c - 32;
-		else if (!start && c >= 'A' && c <= 'Z')
-			c = c + 32;
+		if (start && str[i] >= 'a' && str[i] <= 'z')
+			str[i] = str[i] - 32;
+		else if (!start && str[i] >= 'A' && str[i] <= 'Z')
+			str[i] = str[i] + 32;
 		if (str[i] == ' ' || str[i] == '\t')
 			start = 1;
 		else
 			start = 0;
-		write(1, &c, 1);
+		write(1, &str[i], 1);
 		i++;
 	}
 }

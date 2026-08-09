@@ -5,20 +5,16 @@ int	is_sep(char c)
 	return (c == '\0' || c == ' ' || c == '\t');
 }
 
-void	capitalize(char *str)
+void	reverse_capitalize(char *str)
 {
-	int i;
-	char c;
-
-	i = 0;
+	int i = 0;
 	while (str[i])
 	{
-		c = str[i];
-		if (c >= 'A' && c <= 'Z')
-			c = c + 32;
-		if (c >= 'a' && c <= 'z' && is_sep(str[i + 1]))
-			c = c - 32;
-		write(1, &c, 1);
+		if (str[i] >= 'A' && str[i] <= 'Z')
+			str[i] += 32;
+		if (str[i] >= 'a' && str[i] <= 'z' && is_sep(str[i + 1]))
+			str[i] -= 32;
+		write(1, &str[i], 1);
 		i++;
 	}
 }
@@ -30,7 +26,7 @@ int	main(int argc, char **argv)
 	i = 1;
 	while (i < argc)
 	{
-		capitalize(argv[i]);
+		reverse_capitalize(argv[i]);
 	  	write(1, "\n", 1);
 	  	i++;
 	}

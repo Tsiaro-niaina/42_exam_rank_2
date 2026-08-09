@@ -56,25 +56,24 @@ char **ft_split(char *str)
 	return (res);
 }
 
-#include <stdio.h>
-#include <stdlib.h>
+// #include <stdio.h>
 
-char **ft_split(char *str);
+// char **ft_split(char *str);
 
-int main(void)
-{
-    char **res;
-    int i;
+// int main(void)
+// {
+//     char **res;
+//     int i;
 
-    res = ft_split("  Hello\tworld\nthis is\ta testquote  		4 t");
-    if (!res) return 1;
-    i = 0;
-    while (res[i])
-    {
-        printf("%s\n", res[i]);
-        free(res[i]);
-        i++;
-    }
-    free(res);
-    return 0;
-}
+//     res = ft_split("  Hello\tworld\nthis is\ta testquote  		4 t");
+//     if (!res) return 1;
+//     i = 0;
+//     while (res[i])
+//     {
+//         printf("%s\n", res[i]);
+//         free(res[i]);
+//         i++;
+//     }
+//     free(res);
+//     return 0;
+// }
