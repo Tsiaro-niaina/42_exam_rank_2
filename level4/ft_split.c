@@ -1,93 +1,80 @@
 #include <stdlib.h>
 
-static int	is_sep(char c)
+static int word_len(char *str)
 {
-	return (c == ' ' || c == '\t' || c == '\n');
+	int	i = 0;
+
+	while (str[i] && str[i] != ' ' && str[i] != '\t' && str[i] != '\n')
+		i++;
+	return (i);
 }
 
-static int	count_words(char *str)
+static int count_words(char *str)
 {
-	int	count;
+	int	i = 0;
+	int	count = 0;
 
-	count = 0;
-	while (*str)
+	while (str[i])
 	{
-		while (*str && is_sep(*str))
-			str++;
-		if (*str)
+		while (str[i] && (str[i] == ' ' || str[i] == '\t' || str[i] == '\n'))
+			i++;
+		if (str[i])
 			count++;
-		while (*str && !is_sep(*str))
-			str++;
+		while (str[i] && str[i] != ' ' && str[i] != '\t' && str[i] != '\n')
+			i++;
 	}
 	return (count);
 }
 
-static int	word_len(char *str)
+char **ft_split(char *str)
 {
-	int	len;
-
-	len = 0;
-	while (str[len] && !is_sep(str[len]))
-		len++;
-	return (len);
-}
-
-char	**ft_split(char *str)
-{
-	char	**result;
-	int		i;
-	int		j;
+	int		i = 0;
+	int		j = 0;
 	int		k;
-	int		len;
+	char	**res;
 
-	result = malloc((count_words(str) + 1) * sizeof(char *));
-	if (!result)
+	res = malloc(sizeof(char *) * (count_words(str) + 1));
+	if (!res)
 		return (NULL);
-	i = 0;
-	j = 0;
 	while (str[i])
 	{
-		while (str[i] && is_sep(str[i]))
+		while (str[i] && (str[i] == ' ' || str[i] == '\t' || str[i] == '\n'))
 			i++;
-		if (!str[i])
-			break ;
-		len = word_len(str + i);
-		result[j] = malloc(len + 1);
-		if (!result[j])
-			return (NULL);
-		k = 0;
-		while (k < len)
+		if (str[i])
 		{
-			result[j][k] = str[i + k];
-			k++;
+			k = 0;
+			res[j] = malloc(sizeof(char) * (word_len(&str[i]) + 1));
+			if (!res[j])
+				return (NULL);
+			while (str[i] && str[i] != ' ' && str[i] != '\t' && str[i] != '\n')
+				res[j][k++] = str[i++];
+			res[j][k] = '\0';
+			j++;
 		}
-		result[j][k] = '\0';
-		i += len;
-		j++;
 	}
-	result[j] = NULL;
-	return (result);
+	res[j] = NULL;
+	return (res);
 }
 
-// #include <stdio.h>
-// #include <stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-// char **ft_split(char *str);
+char **ft_split(char *str);
 
-// int main(void)
-// {
-//     char **res;
-//     int i;
+int main(void)
+{
+    char **res;
+    int i;
 
-//     res = ft_split("  Hello\tworld\nthis is\ta test  ");
-//     if (!res) return 1;
-//     i = 0;
-//     while (res[i])
-//     {
-//         printf("[%s]\n", res[i]);
-//         free(res[i]);
-//         i++;
-//     }
-//     free(res);
-//     return 0;
-// }
+    res = ft_split("  Hello\tworld\nthis is\ta testquote  		4 t");
+    if (!res) return 1;
+    i = 0;
+    while (res[i])
+    {
+        printf("%s\n", res[i]);
+        free(res[i]);
+        i++;
+    }
+    free(res);
+    return 0;
+}
