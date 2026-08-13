@@ -22,7 +22,7 @@ t_list	*sort_list(t_list *lst, int (*cmp)(int, int))
 		node = lst;
 		while (node && node->next)
 		{
-			if (!cmp(node->data, node->next->data))
+			if (cmp(node->data, node->next->data) == 0)
 			{
 				tmp = node->data;
 				node->data = node->next->data;

@@ -2,8 +2,9 @@
 
 static int word_len(char *str)
 {
-	int	i = 0;
+	int	i;
 
+	i = 0;
 	while (str[i] && str[i] != ' ' && str[i] != '\t' && str[i] != '\n')
 		i++;
 	return (i);
@@ -11,9 +12,11 @@ static int word_len(char *str)
 
 static int count_words(char *str)
 {
-	int	i = 0;
-	int	count = 0;
+	int	i;
+	int	count;
 
+	i = 0;
+	count = 0;
 	while (str[i])
 	{
 		while (str[i] && (str[i] == ' ' || str[i] == '\t' || str[i] == '\n'))
