@@ -4,9 +4,9 @@ int	max(int* tab, unsigned int len)
 		return (0);
 	unsigned int	i;
 	int				max;
+
 	i = 1;
 	max = tab[0];
-
 	while (i < len)
 	{
 		if (tab[i] > max)

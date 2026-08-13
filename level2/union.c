@@ -2,7 +2,9 @@
 
 void	ft_union(char *s, int *seen)
 {
-	int	i = 0;
+	int	i;
+
+	i = 0;
 	while (s[i])
 	{
 		if (seen[(unsigned int)s[i]] == 0)

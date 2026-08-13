@@ -2,8 +2,11 @@
 
 void capitalize(char *str)
 {
-	int i = 0;
-	int start = 1;
+	int i;
+	int start;
+
+	i = 0;
+	start = 1;
 	while (str[i])
 	{
 		if (start && str[i] >= 'a' && str[i] <= 'z')

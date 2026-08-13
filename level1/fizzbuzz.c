@@ -2,15 +2,19 @@
 
 void	ft_putnbr(int n)
 {
+	char	c;
+
 	if (n >= 10)
 		ft_putnbr(n / 10);
-	char c = n % 10 + '0';
+	c = n % 10 + '0';
 	write (1, &c, 1);
 }
 
 void	fizzbuzz(int n)
 {
-	int	i = 1;
+	int	i;
+
+	i = 1;
 	while (i < n)
 	{
 		if (i % 15 == 0)

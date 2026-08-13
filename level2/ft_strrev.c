@@ -1,8 +1,11 @@
 char*ft_strrev(char *s)
 {
 	char	temp;
-	int		i = 0;
-	int		j = 0;
+	int		i;
+	int		j;
+
+	i = 0;
+	j = 0;
 	while (s[j])
 		j++;
 	j--;
@@ -16,7 +19,6 @@ char*ft_strrev(char *s)
 	}
 	return (s);
 }
-
 
 // #include <stdio.h>
 

@@ -2,14 +2,17 @@
 
 void	last_word(char *s)
 {
-	int	i = 0;
+	int	i;
 	int	start_word;
+	int	end_word;
+
+	i = 0;
 	while (s[i])
 		i++;
 	i--;
 	while (i >= 0 && (s[i] == ' ' || s[i] == '\t'))
 		i--;
-	int end_word = i;
+	end_word = i;
 	while (i >= 0 && s[i] != ' ' && s[i] != '\t')
 		i--;
 	start_word = i + 1;

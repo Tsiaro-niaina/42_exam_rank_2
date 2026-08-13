@@ -1,10 +1,12 @@
 #include <unistd.h>
 
-int print_rest_of_words(char *s, int start)
+int	print_rest_of_words(char *s, int start)
 {
-	int i = start;
-	int first = 1;
+	int	i;
+	int	first;
 
+	i = start;
+	first = 1;
 	while (s[i])
 	{
 		while (s[i] == ' ' || s[i] == '\t')
@@ -21,16 +23,16 @@ int print_rest_of_words(char *s, int start)
 	return (!first);
 }
 
-void write_first_word(char *s, int start, int end)
+void	write_first_word(char *s, int start, int end)
 {
 	while (start < end)
 		write(1, &s[start++], 1);
 }
 
-int main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
-	int i;
-	int first_word_start;
+	int	i;
+	int	first_word_start;
 
 	if (argc >= 2)
 	{

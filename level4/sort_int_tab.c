@@ -24,25 +24,25 @@ void	sort_int_tab(int *tab, unsigned int size)
 	}
 }
 
+// #include <stdio.h>
 
-#include <stdio.h>
-int main(void)
-{
-	int	tab[] = {5, 3, 2, 4, 1};
-	int	size = sizeof(tab) / sizeof(tab[0]);
-	int	i;
+// int main(void)
+// {
+// 	int	tab[] = {5, 3, 2, 4, 1};
+// 	int	size = sizeof(tab) / sizeof(tab[0]);
+// 	int	i;
 
-	printf("Avant le tri : ");
-	for (i = 0; i < size; i++)
-		printf("%d ", tab[i]);
-	printf("\n");
+// 	printf("Avant le tri : ");
+// 	for (i = 0; i < size; i++)
+// 		printf("%d ", tab[i]);
+// 	printf("\n");
 
-	sort_int_tab(tab, size);
+// 	sort_int_tab(tab, size);
 
-	printf("Après le tri : ");
-	for (i = 0; i < size; i++)
-		printf("%d ", tab[i]);
-	printf("\n");
+// 	printf("Après le tri : ");
+// 	for (i = 0; i < size; i++)
+// 		printf("%d ", tab[i]);
+// 	printf("\n");
 
-	return (0);
-}
+// 	return (0);
+// }

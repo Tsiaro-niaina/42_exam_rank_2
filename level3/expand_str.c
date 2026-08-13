@@ -2,8 +2,9 @@
 
 int	main(int ac, char **av)
 {
-	int	i = 0;
+	int	i;
 	int first;
+
 	if (ac == 2)
 	{
 		first = 1;

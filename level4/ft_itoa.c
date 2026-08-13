@@ -25,7 +25,7 @@ char	*ft_itoa(int nbr)
 	n = (long)nbr;
 	len = len_int(n);
 	result = malloc(sizeof(char) * (len + 1));
-	if (result == NULL)
+	if (!result)
 		return (NULL);
 	result[len] = '\0';
 	neg = 0;

@@ -2,14 +2,18 @@
 
 void	rot_1(char *s)
 {
-	int	i = 0;
+	int		i;
+	char	c;
+	i = 0;
 	while (s[i])
 	{
 		if (s[i] == 'z' || s[i] == 'Z')
-			s[i] -= 25;
+			c = s[i] - 25;
 		else if ((s[i] >= 'a' && s[i] <= 'y') || (s[i] >= 'A' && s[i] <= 'Y'))
-			s[i] += 1;
-		write (1, &s[i], 1);
+			c = s[i] + 1;
+		else
+			c = s[i];
+		write (1, &c, 1);
 		i++;
 	}
 }

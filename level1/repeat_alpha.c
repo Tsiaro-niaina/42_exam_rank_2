@@ -2,9 +2,13 @@
 
 void	repeat_alpha(char *s)
 {
-	int	i = 0;
-	int	j = 0;
-	int	repeat = 0;
+	int	i;
+	int	j;
+	int	repeat;
+
+	i = 0;
+	j = 0;
+	repeat = 0;
 	while (s[i])
 	{
 		if (s[i] >= 'a' && s[i] <= 'z')

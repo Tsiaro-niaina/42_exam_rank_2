@@ -3,7 +3,9 @@
 void	inter(char *s1, char *s2)
 {
 	int	seen[256] = {0};
-	int	i = 0;
+	int	i;
+
+	i = 0;
 	while (s1[i])
 	{
 		int j = 0;

@@ -2,7 +2,9 @@
 
 int	ft_strlen(char *s)
 {
-	int i = 0;
+	int i;
+
+	i = 0;
 	while (s[i])
 		i++;
 	return(i);
@@ -10,10 +12,13 @@ int	ft_strlen(char *s)
 
 char	*ft_strdup(char *src)
 {
-	int		i = 0;
-	char	*dup = malloc(sizeof(char) * (ft_strlen(src) + 1));
+	int		i;
+	char	*dup;
+
+	dup = malloc(sizeof(char) * (ft_strlen(src) + 1));
 	if (!dup)
 		return (NULL);
+	i = 0;
 	while (src[i])
 	{
 		dup[i] = src[i];

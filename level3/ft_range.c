@@ -2,15 +2,18 @@
 
 int     *ft_range(int start, int end)
 {
-	int len;
-	int i = 0;
+	int	len;
+	int	i;
+	int	*tab; 
+
 	if (start >= end)
-		len = start -  end + 1;
+		len = start - end + 1;
 	else
 		len = end - start + 1;
-	int *tab = malloc (sizeof (int) * len); 
+	tab = malloc(sizeof(int) * len);
 	if (!tab)
-		return (0);
+		return (NULL);
+	i = 0;
 	while (i < len)
 	{
 		if (end >= start)
@@ -23,10 +26,11 @@ int     *ft_range(int start, int end)
 }
 
 // #include <stdio.h>
+
 // int main(void)
 // {
-// 	int start = 1;
-// 	int end = 5;
+// 	int start = 5;
+// 	int end = 1;
 // 	int *result = ft_range(start, end);
 // 	int len = (end >= start) ? (end - start + 1) : (start - end + 1);
 // 	for (int i = 0; i < len; i++)

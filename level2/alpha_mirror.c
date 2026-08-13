@@ -2,8 +2,10 @@
 
 void	alpha_mirror(char *s)
 {
-	int		i = 0;
+	int		i;
 	char	mirror;
+
+	i = 0;
 	while (s[i])
 	{
 		if (s[i] >= 'A' && s[i] <= 'Z')

@@ -2,8 +2,10 @@
 
 char	*ft_strpbrk(const char *s1, const char *s2)
 {
-	int	i = 0;
-	int	j = 0;
+	int	i;
+	int	j;
+
+	i = 0;
 	while (s1[i])
 	{
 		j = 0;
@@ -17,7 +19,6 @@ char	*ft_strpbrk(const char *s1, const char *s2)
 	}
 	return (NULL);
 }
-
 
 // #include <stdio.h>
 // int main(void)

@@ -6,8 +6,6 @@ void	fprime(int nbr)
 	int	div;
 
 	div = 2;
-	if (nbr < 0)
-		return ;
 	if (nbr == 1)
 		printf("1");
 	while (div <= nbr)

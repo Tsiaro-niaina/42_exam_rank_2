@@ -24,13 +24,12 @@ int	ft_atoi_base(const char *str, int str_base)
 	return (res * sign);
 }
 
-
-#include <stdio.h>
-int main(void)
-{
-	const char *str = "-1A";
-	int str_base = 16;
-	int result = ft_atoi_base(str, str_base);
-	printf("The integer value of '%s' in base %d is: %d\n", str, str_base, result);
-	return (0);
-}
+// #include <stdio.h>
+// int main(void)
+// {
+// 	const char *str = "-1A";
+// 	int str_base = 16;
+// 	int result = ft_atoi_base(str, str_base);
+// 	printf("The integer value of '%s' in base %d is: %d\n", str, str_base, result);
+// 	return (0);
+// }

@@ -2,10 +2,13 @@
 
 int main(int argc, char **argv)
 {
-	int i = 0;
+	int i;
+	int	j;
+
+	i = 0;
 	if (argc == 3)
 	{
-		int j = 0;
+		j = 0;
 		while (argv[1][i] && argv[2][j])
 		{
 			if (argv[1][i] == argv[2][j])
