@@ -2,7 +2,7 @@
 
 void	search_and_replace(char *s, char to_search, char to_replace)
 {
-	int i = 0;
+	int	i = 0;
 	while (s[i])
 	{
 		if (s[i] == to_search)

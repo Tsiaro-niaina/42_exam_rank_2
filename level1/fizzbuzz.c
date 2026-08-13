@@ -29,6 +29,5 @@ void	fizzbuzz(int n)
 int	main()
 {
 	fizzbuzz(101);
-	write (1, "\n", 1);
 	return (0);
 }
