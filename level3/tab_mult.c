@@ -5,7 +5,7 @@ void	put_str(char *str)
 	int	i;
 
 	i = 0;
-	while (str[i] != '\0')
+	while (str[i])
 	{
 		write(1, &str[i], 1);
 		i++;
@@ -31,9 +31,16 @@ int	ft_atoi(char *str)
 
 void	put_nbr(int n)
 {
+	char	c;
+
+	if (n < 0)
+	{
+		write(1, "-", 1);
+		n = -n;
+	}
 	if (n >= 10)
 		put_nbr(n / 10);
-	char c = n % 10 + '0';
+	c = n % 10 + '0';
 	write(1, &c, 1);
 }
 
