@@ -45,3 +45,19 @@ char	*ft_itoa(int nbr)
 		result[0] = '-';
 	return (result);
 }
+
+// int main(void)
+// {
+// 	int		nbr;
+// 	char	*str;
+
+// 	nbr = -2147483648;
+// 	str = ft_itoa(nbr);
+// 	if (str)
+// 	{
+// 		write(1, str, 11);
+// 		write(1, "\n", 1);
+// 		free(str);
+// 	}
+// 	return (0);
+// }

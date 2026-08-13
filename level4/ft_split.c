@@ -31,11 +31,14 @@ static int count_words(char *str)
 
 char **ft_split(char *str)
 {
-	int		i = 0;
-	int		j = 0;
+	int		i;
+	int		j;
 	int		k;
 	char	**res;
 
+	i = 0;
+	j = 0;
+	k = 0;
 	res = malloc(sizeof(char *) * (count_words(str) + 1));
 	if (!res)
 		return (NULL);
