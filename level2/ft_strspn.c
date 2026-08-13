@@ -12,7 +12,10 @@ size_t	ft_strspn(const char *s, const char *accept)
 		while (accept[j])
 		{
 			if (s[i] == accept[j])
+			{
 				bool_found = 1;
+				break ;
+			}
 			j++;
 		}
 		if (bool_found == 0)
@@ -21,6 +24,7 @@ size_t	ft_strspn(const char *s, const char *accept)
 	}
 	return (i);
 }
+
 
 // #include <stdio.h>
 

@@ -2,7 +2,7 @@
 
 void	alpha_mirror(char *s)
 {
-	int	i = 0;
+	int		i = 0;
 	char	mirror;
 	while (s[i])
 	{

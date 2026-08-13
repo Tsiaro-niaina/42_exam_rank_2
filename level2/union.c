@@ -5,7 +5,7 @@ void	ft_union(char *s, int *seen)
 	int	i = 0;
 	while (s[i])
 	{
-		if (!seen[(unsigned int)s[i]])
+		if (seen[(unsigned int)s[i]] == 0)
 		{
 			write (1, &s[i], 1);
 			seen[(unsigned int)s[i]] = 1;
@@ -17,7 +17,7 @@ void	ft_union(char *s, int *seen)
 
 int main (int argc, char **argv)
 {
-	int	seen[256] = {0};
+	int	seen[128] = {0};
 	if (argc == 3)
 	{
 		ft_union(argv[1], seen);
